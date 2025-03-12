@@ -1,0 +1,85 @@
+model: sales_data {
+  connection: "your_connection_name"
+
+  include: "*.view"
+
+  explore: sales_data {
+    label: "Sales Data"
+    description: "Explore sales data from CSV"
+    
+    join: sales_data_extract {
+      type: left_outer
+      sql_on: ${sales_data.order_id} = ${sales_data_extract.order_id} ;;
+      relationship: many_to_one
+    }
+  }
+}
+
+view: sales_data {
+  sql_table_name: sales_data.csv ;;
+
+  dimension: order_id {
+    primary_key: yes
+    type: number
+    sql: ${TABLE}.OrderID ;;
+  }
+
+  dimension: date {
+    type: date
+    sql: ${TABLE}.Date ;;
+  }
+
+  dimension: category {
+    type: string
+    sql: ${TABLE}.Category ;;
+  }
+
+  dimension: product {
+    type: string
+    sql: ${TABLE}.Product ;;
+  }
+
+  measure: sales {
+    type: sum
+    sql: ${TABLE}.Sales ;;
+  }
+
+  measure: quantity {
+    type: sum
+    sql: ${TABLE}.Quantity ;;
+  }
+}
+
+view: sales_data_extract {
+  sql_table_name: Extract ;;
+
+  dimension: order_id {
+    type: number
+    sql: ${TABLE}.OrderID ;;
+  }
+
+  dimension: date {
+    type: date
+    sql: ${TABLE}.Date ;;
+  }
+
+  dimension: category {
+    type: string
+    sql: ${TABLE}.Category ;;
+  }
+
+  dimension: product {
+    type: string
+    sql: ${TABLE}.Product ;;
+  }
+
+  measure: sales {
+    type: sum
+    sql: ${TABLE}.Sales ;;
+  }
+
+  measure: quantity {
+    type: sum
+    sql: ${TABLE}.Quantity ;;
+  }
+}
