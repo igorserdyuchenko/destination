@@ -48,7 +48,7 @@ view: sales_data_view {
   }
 
   measure: quantity {
-    sql: SUM(${TABLE}.Quantity) ;;
+    sql: ${TABLE}.Quantity ;;
     type: sum
   }
 }
