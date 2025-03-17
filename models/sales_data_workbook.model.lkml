@@ -1,30 +1,11 @@
-connection: "demo_2" {
-  # Define your connection details here
-}
+connection: "your_connection_name"
 
-  explore: sales_data {
-    view_name: sales_data_view
-
-    # Add any necessary joins here if applicable
-  }
-
-# model: sales_data_model {
-#   include: "*.view"
-
-#   explore: sales_data {
-#     view_name: sales_data_view
-
-#     # Add any necessary joins here if applicable
-#   }
-# }
-
-view: sales_data_view {
-  sql_table_name: public.orders ;;
+view: sales_data {
+  sql_table_name: sales_data.csv ;;
 
   dimension: order_id {
     sql: ${TABLE}.OrderID ;;
     type: number
-    primary_key: yes
   }
 
   dimension: date {
@@ -43,7 +24,7 @@ view: sales_data_view {
   }
 
   measure: sales {
-    sql: SUM(${TABLE}.Sales) ;;
+    sql: ${TABLE}.Sales ;;
     type: sum
   }
 
@@ -51,4 +32,8 @@ view: sales_data_view {
     sql: ${TABLE}.Quantity ;;
     type: sum
   }
+}
+
+explore: sales_data {
+  label: "Sales Data"
 }
