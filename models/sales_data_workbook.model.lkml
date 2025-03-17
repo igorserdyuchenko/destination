@@ -1,7 +1,7 @@
-connection: "your_connection_name"
+connection: "demo_2"
 
 view: sales_data {
-  sql_table_name: sales_data.csv ;;
+  sql_table_name: public.orders ;;
 
   dimension: order_id {
     sql: ${TABLE}.OrderID ;;
