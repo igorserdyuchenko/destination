@@ -2,6 +2,12 @@ connection: "demo_2" {
   # Define your connection details here
 }
 
+  explore: sales_data {
+    view_name: sales_data_view
+
+    # Add any necessary joins here if applicable
+  }
+
 # model: sales_data_model {
 #   include: "*.view"
 
