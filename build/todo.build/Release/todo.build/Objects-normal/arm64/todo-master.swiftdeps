@@ -1,0 +1,8 @@
+version: "Apple Swift version 6.0.3 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)"
+options: "6b2b97a585e6f5908658075818cf5dd60cc069963407b71f498bbffbba7bb9aa"
+build_start_time: [1756886697, 400673000]
+build_end_time: [1756886700, 797970000]
+inputs:
+  "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/DerivedSources/GeneratedAssetSymbols.swift": [1756886697, 292867433]
+  "/Users/iserdyuc/sources/migrator/destination/todo/ContentView.swift": [1756886553, 171412349]
+  "/Users/iserdyuc/sources/migrator/destination/todo/todoApp.swift": [1756886553, 158441663]

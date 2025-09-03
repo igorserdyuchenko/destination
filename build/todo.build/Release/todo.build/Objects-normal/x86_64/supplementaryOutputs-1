@@ -1,0 +1,9 @@
+"/Users/iserdyuc/sources/migrator/destination/todo/ContentView.swift":
+  abi-baseline-json: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo.abi.json"
+  dependencies: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo-master.d"
+  const-values: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo-master.swiftconstvalues"
+  objc-header: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo-Swift.h"
+  swiftmodule: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo.swiftmodule"
+  diagnostics: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo-master.dia"
+  swiftdoc: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo.swiftdoc"
+  swiftsourceinfo: "/Users/iserdyuc/sources/migrator/destination/build/todo.build/Release/todo.build/Objects-normal/x86_64/todo.swiftsourceinfo"

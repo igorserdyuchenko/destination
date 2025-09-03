@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/iserdyuc/sources/migrator/destination/build/Release/todo.app/Contents/MacOS/todo'
+relocations:     []
+...
